@@ -1,7 +1,6 @@
 const UserService = require("../../domain/user/services/UserService")
 
-
-class UserController {
+class AllUserController {
 
     handle(req, res, next) {
         const{body}= req
@@ -14,9 +13,14 @@ class UserController {
              celular:req.body.celular,
              data:req.body.data,
              emailsms:req.body.emailsms,
-            whats:req.body.whats});
+             whats:req.body.whats,
+             pais:req.body.pais,
+             cidade:req.body.cidade, 
+             cep:req.body.cep,
+             endereco:req.body.endereco, 
+             numero:req.body.numero});
     }
 
 }
 
-module.exports = new UserController();
+module.exports = new AllUserController();
