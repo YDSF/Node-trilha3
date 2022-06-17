@@ -14,7 +14,7 @@ class UserService {
         if (email !== confirmemail || confirmemail == "") {
             console.log("Email válido")
         }
-        
+
         function ValidadorCPF(Cpf) {
             var Soma;
             var Resto;
@@ -41,16 +41,16 @@ class UserService {
             if (Resto != parseInt(Cpf.substring(10, 11))) return false;
             return true;
         }
-          if (cpf == "" || cpf.length < 14 && !ValidadorCPF(cpf.replace(/[^0-9]/g, ''))) {
+        if (cpf == "" || cpf.length < 14 && !ValidadorCPF(cpf.replace(/[^0-9]/g, ''))) {
             console.log("O CPF não está válido")
         }
         if (celular == "" || celular.length < 11) {
             console.log("Digite um celular válido")
         }
-        if (data == "" || data.length <10) {
+        if (data == "" || data.length < 10) {
             console.log("Digite uma data válida")
         }
-        if (emailsms == "" && whats == "" ) {
+        if (emailsms == "" && whats == "") {
             console.log("Selecione pelo menos uma opção")
         }
         if (pais == "" || pais.length < 3) {
@@ -59,7 +59,7 @@ class UserService {
         if (cidade == "") {
             console.log("Digite uma cidade válido")
         }
-        if (cep == "" || cep.length < 8 || cep.length >8) {
+        if (cep == "" || cep.length < 8 || cep.length > 8) {
             console.log("Digite um cep válido")
         }
         if (endereco == "") {
@@ -69,8 +69,7 @@ class UserService {
             console.log("Digite um numero")
         }
 
-
-}
+    }
 
 }
 
