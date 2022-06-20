@@ -7,7 +7,6 @@ class AllUserController {
         UserService.createUser(body)
         res.send({
             name: req.body.name,
-            idade: req.body.idade,
             email: req.body.email,
             confirmemail: req.body.confirmemail,
             cpf: req.body.cpf,
