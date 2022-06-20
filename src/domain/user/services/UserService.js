@@ -12,7 +12,7 @@ class UserService {
             console.log("Digite um email válido")
         }
         if (email !== confirmemail || confirmemail == "") {
-            console.log("Email válido")
+            console.log("Email inválido")
         }
 
         function ValidadorCPF(Cpf) {
@@ -42,7 +42,7 @@ class UserService {
             return true;
         }
         if (cpf == "" || cpf.length < 14 && !ValidadorCPF(cpf.replace(/[^0-9]/g, ''))) {
-            console.log("O CPF não está válido")
+            console.log("CPF inválido")
         }
         if (celular == "" || celular.length < 11) {
             console.log("Digite um celular válido")
@@ -57,7 +57,7 @@ class UserService {
             console.log("Digite um pais válido")
         }
         if (cidade == "") {
-            console.log("Digite uma cidade válido")
+            console.log("Digite uma cidade válida")
         }
         if (cep == "" || cep.length < 8 || cep.length > 8) {
             console.log("Digite um cep válido")
